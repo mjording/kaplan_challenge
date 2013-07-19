@@ -1,0 +1,7 @@
+<%= form_tag('/slides', class: 'form-search form-inline') do |f| %>
+  <div class="field">
+    <%= label_tag  :keyword, 'Flikr tag' %>
+    <%= text_field_tag 'keyword', @keyword || 'find images', class: "search-query" %>
+     <%=  submit_tag "search" %>
+  </div>
+<% end %>
